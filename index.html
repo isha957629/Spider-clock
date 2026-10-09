@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spider Clock Animation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="clock-container">
+    <h1>Spider Clock Animation</h1>
+
+    <div class="clock">
+      <div class="gear gear-one"></div>
+      <div class="gear gear-two"></div>
+      <div class="gear gear-three"></div>
+      <div class="gear gear-four"></div>
+
+      <div class="numbers">
+        <span style="--i:1">1</span>
+        <span style="--i:2">2</span>
+        <span style="--i:3">3</span>
+        <span style="--i:4">4</span>
+        <span style="--i:5">5</span>
+        <span style="--i:6">6</span>
+        <span style="--i:7">7</span>
+        <span style="--i:8">8</span>
+        <span style="--i:9">9</span>
+        <span style="--i:10">10</span>
+        <span style="--i:11">11</span>
+        <span style="--i:12">12</span>
+      </div>
+
+      <svg class="spider" viewBox="0 0 200 200"
+           aria-label="Yellow spider clock">
+        <g class="legs">
+          <path d="M88 86 Q65 60 43 68 L22 48
+                   M84 96 Q58 84 37 100 L17 91
+                   M84 108 Q58 110 43 132 L24 143
+                   M91 116 Q77 139 70 157 L51 165
+                   M112 86 Q135 60 157 68 L178 48
+                   M116 96 Q142 84 163 100 L183 91
+                   M116 108 Q142 110 157 132 L176 143
+                   M109 116 Q123 139 130 157 L149 165"/>
+        </g>
+        <ellipse class="body" cx="100" cy="103"
+                 rx="15" ry="27"/>
+        <circle class="head" cx="100" cy="72" r="11"/>
+        <circle class="eye" cx="96" cy="70" r="2"/>
+        <circle class="eye" cx="104" cy="70" r="2"/>
+      </svg>
+
+      <div class="hand hour" id="hour"></div>
+      <div class="hand minute" id="minute"></div>
+      <div class="hand second" id="second"></div>
+      <div class="center-dot"></div>
+    </div>
+
+    <p class="caption">TIME IS IN YOUR HANDS</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
